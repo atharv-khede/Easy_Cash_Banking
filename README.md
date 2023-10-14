@@ -31,6 +31,6 @@ Text analytics for Health.
 * Microsoft VS Code
 
 # Accounts
-GitHub: [atharv-khede](https://github.com/atharv-khede)
-Azure Account Id: atharvkhede625@outlook.com
+* GitHub: [atharv-khede](https://github.com/atharv-khede)
+* Azure Account Id: atharvkhede625@outlook.com
   
