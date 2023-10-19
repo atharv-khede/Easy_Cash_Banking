@@ -1,7 +1,3 @@
-// http://bestwebcreator.com/cryptocash/demo/index-dark-particle.html
-// https://codepen.io/yukki/pen/rmmKjM
-
-
 $(function() {
   /*===================================*
 	03. MENU JS
@@ -152,3 +148,21 @@ $(function() {
     );
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const dataForm = document.getElementById('dataForm');
+
+  dataForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Display a popup message (alert in this case)
+      alert('Form submitted successfully!'); // You can replace this with a custom modal or message display.
+
+      // Optionally, you can reset the form
+      dataForm.reset();
+  });
+});
+
+
+

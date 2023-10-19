@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Easy cash a Banking Category Responsive Web Template | Contact :: W3layouts</title>
+    <title>Easy cash</title>
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
@@ -97,7 +97,7 @@ $(function () {
                 <h3 class="header-name editContent">
                     Get In Touch
                 </h3>
-                <p class="tiltle-para editContent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga sit illo modi aut aspernatur tempore laboriosam saepe dolores eveniet.</p>
+                <p class="tiltle-para editContent">We're here to assist you! Whether you have questions, need support, or want to explore partnership opportunities, our team is just a message away. Please fill out the form below or use the provided contact information, and we'll respond promptly. Your feedback and inquiries are important to us, and we look forward to hearing from you.</p>
             </div>
             <div class="d-grid contact-view">
                 <div class="cont-details">
@@ -107,7 +107,7 @@ $(function () {
                         </div>
                         <div class="cont-right">
                             <h6>Call Us</h6>
-                            <p class="para"><a href="tel:+91 7987699625">+123 45 67 89</a></p>
+                            <p class="para"><a href="tel:+91 7987699625">Call now</a></p>
                         </div>
                     </div>
                     <div class="cont-top margin-up">
@@ -116,7 +116,7 @@ $(function () {
                         </div>
                         <div class="cont-right">
                             <h6>Email Us</h6>
-                            <p class="para"><a href="mailto:atharvwork625@mail.com" class="mail">easybank@mail.com</a></p>
+                            <p class="para"><a href="mailto:atharvkhede625@outlook.com" class="mail">easybank@mail.com</a></p>
                         </div>
                     </div>
                     <div class="cont-top margin-up">
@@ -125,22 +125,22 @@ $(function () {
                         </div>
                         <div class="cont-right">
                             <h6>Address</h6>
-                            <p class="para"> Indore, #32841 block,
-                              #221DRS 75 West Rock, Malhar Building, India.</p>
+                            <p class="para"> London, #32841 block,
+                              #221DRS 75 , Big Ben, UK.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                 <div class="map-content-9 col-lg-6">
-                    <form action="mailto:atharvwork625@gmail.com" method="post">
+                    <form id="dataForm" method="post">
                         <div class="twice-two">
-                            <input type="text" class="form-control" name="w3lName" id="w3lName" placeholder="Name" required="">
-                            <input type="email" class="form-control" name="w3lSender" id="w3lSender" placeholder="Email" required="">
+                            <input type="text" class="form-control" name="cstmrName" id="cstmrName" placeholder="Name" required="">
+                            <input type="email" class="form-control" name="cstmrSender" id="cstmrSender" placeholder="Email" required="">
                         </div>
                         <div class="twice">
-                            <input type="text" class="form-control" name="w3lSubject" id="w3lSubject" placeholder="Subject" required="">
+                            <input type="text" class="form-control" name="cstmrSubject" id="cstmrSubject" placeholder="Subject" required="">
                         </div>
-                        <textarea name="w3lMessage" class="form-control" id="w3lMessage" placeholder="Message" required=""></textarea>
+                        <textarea name="cstmrMessage" class="form-control" id="cstmrMessage" placeholder="Message" required=""></textarea>
                         <button type="submit" class="btn btn-contact">Send Message</button>
                     </form>
                 </div>
@@ -157,7 +157,7 @@ $(function () {
 		  <div class="col-lg-4 col-md-6 col-sm-8 footer-list-29 footer-1">
 			<div class="left-side">
 				<h2><a href="index.html" class="footer-logo"><span class="fa fa-university mr-1" aria-hidden="true"></span>Easy cash</a></h2>
-				<p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe qui repellat nam vero consectetur dicta eos suscipit. Numquam at minus architecto asperiores cupiditate. At molestias laborum voluptatibus numquam aperiam in.</p>
+				<p class="para">Your satisfaction is our success - thank you for banking with us.</p>
 			</div>
 		  </div>
 		  <div class="col-lg-3 col-md-3 col-sm-4 footer-list-29 footer-2 ">
@@ -167,7 +167,7 @@ $(function () {
 				<li><a href="#page">Guarantee</a></li>
 				<li><a href="#page">Security</a></li>
 				<li><a href="#page"> Our story</a></li>
-				<li><a href="#page">Contact us</a></li>
+				<li><a href="contact.html">Contact us</a></li>
 			  </ul>
 		  </div>
 		  <div class="col-lg-3 col-md-3 col-sm-6 footer-list-29 footer-2 ">
@@ -186,7 +186,7 @@ $(function () {
 				<li><a href="#page">Find a branch</a></li>
 				<li><a href="#page">FAQs</a></li>
 				<li><a href="#page">APR</a></li>
-				<li><a href="#page">Contact us</a></li>
+				<li><a href="contact.html">Contact us</a></li>
 			  </ul>
 		  </div>
 		</div>
@@ -203,7 +203,35 @@ $(function () {
 <button onclick="topFunction()" id="movetop" title="Go to top">
 	<span class="fa fa-long-arrow-up"></span>
 </button>
+
+
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const dataForm = document.getElementById('dataForm');
+
+  dataForm.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+    
+      const formData = new FormData(dataForm);
+
+        // Access individual form fields by their 'name' attribute
+        const name = formData.get('cstmrName');
+        const email = formData.get('cstmrSender');
+        const subject = formData.get('cstmrSubject');
+        const message = formData.get('cstmrMessage');
+
+        // Do something with the form data
+        console.log('Name:', name);
+        console.log('Email:', email);
+        console.log('Subject:', subject);
+        console.log('Message:', message);
+      // Display a popup message (alert in this case)
+      alert('Your query submitted successfully!'); // You can replace this with a custom modal or message display.
+
+      // Optionally, you can reset the form
+      dataForm.reset();
+  });
+});
 	// When the user scrolls down 20px from the top of the document, show the button
 	window.onscroll = function () {
 		scrollFunction()
