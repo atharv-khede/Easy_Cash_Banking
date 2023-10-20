@@ -4,7 +4,8 @@ This website contains four pages:
 * Home page: This is the introductory page of the website.
 * service: This page shows all the available services of the application.
 * About: This page contains all basic understanding About applications and services.
-* Contact: Customer can contact the bank and can put their queries here. 
+* Contact: Customer can contact the bank and can put their queries here.
+* Bot service: Chatbot for customer's instant queries.
 
 # Project link(deployed using Azure)
 [online_Easy_cash](https://ambitious-hill-05e999f10.3.azurestaticapps.net)
