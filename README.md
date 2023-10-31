@@ -15,12 +15,38 @@ This website contains four pages:
 * Azure language service (custom question answering)
 
 # What are Microsoft Azure web app services
-Microsoft Azure offers various services for hosting web applications and managing databases.
-One common approach is to use Azure Web Apps for hosting your web application and Azure Database Services for managing your databases.
-For this Project, I use the static web app services.
+Azure App Service is an HTTP-based service hosting web applications, REST APIs, and mobile backends. You can develop in your favorite programming language or framework. Applications run and scale with ease on both Windows and Linux-based environments.
+
+## Continuous integration/deployment support
+### Automated deployment
+Automated deployment, or continuous deployment, is a process used to push out new features and bug fixes in a fast and repetitive pattern with minimal effect on end users.
+
+Azure supports automated deployment directly from several sources. The following options are available:
+
+#### Azure DevOps Services: 
+You can push your code to Azure DevOps Services, build your code in the cloud, run the tests, generate a release from the code, and finally, push your code to an Azure Web App.
+#### GitHub:
+Azure supports automated deployment directly from GitHub. When you connect your GitHub repository to Azure for automated deployment, any changes you push to your production branch on GitHub are automatically deployed for you.
+#### Bitbucket:
+With its similarities to GitHub, you can configure an automated deployment with Bitbucket.
+
+### Manual deployment
+There are a few options that you can use to manually push your code to Azure:
+
+#### Git:
+App Service web apps feature a Git URL that you can add as a remote repository. Pushing to the remote repository deploys your app.
+#### CLI:
+web app up is a feature of the az command-line interface that packages your app and deploys it. Unlike other deployment methods, az webapp up can create a new App Service web app for you if you haven't already created one.
+#### Zip deploy:
+Use curl or a similar HTTP utility to send a ZIP of your application files to App Service.
+#### FTP/S:
+FTP or FTPS is a traditional way of pushing your code to many hosting environments, including App Service.
+
+## Deployment slots
+When you deploy your web app you can use a separate deployment slot instead of the default production slot when you're running in the Standard App Service Plan tier or better. Deployment slots are live apps with their own host names. App content and configuration elements can be swapped between two deployment slots, including the production slot.
 
 # Azure language services
-Microsoft Azure provides language services that contain following features:
+Microsoft Azure provides language services that contain the following features:
 Sentiment analysis,
 Key phrase extraction,
 Pre-built question answering,
