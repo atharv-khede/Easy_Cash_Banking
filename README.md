@@ -6,6 +6,7 @@ This website contains four pages:
 * About: This page contains all basic understanding About applications and services.
 * Contact: Customer can contact the bank and put their queries here.
 * Bot service: Chatbot for customer's instant queries.
+
 This project is a static website for Internet banking purposes that allows bank customers to fulfill their banking needs with ease and from any device.
 From opening an account in the bank to accessing online business, all your needs can be fulfilled here.
 
