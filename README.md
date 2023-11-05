@@ -1,3 +1,6 @@
+# Overview
+This README file provides information about the Internet Banking Website project. The project aims to create a secure and user-friendly Internet banking platform for customers to manage their accounts, perform transactions, and access financial services online. It is primarily built using HTML, CSS, and JavaScript.
+
 # Easy_Cash_Banking
 This online banking static web application provides the proper template of an actual website along with chatbot functionality.
 This website contains four pages:
@@ -5,10 +8,16 @@ This website contains four pages:
 * service: This page shows all the available services of the application.
 * About: This page contains all basic understanding About applications and services.
 * Contact: Customer can contact the bank and put their queries here.
-* Bot service: Chatbot for customer's instant queries.
+* Bot service: Chatbot for customers' instant queries.
 
 This project is a static website for Internet banking purposes that allows bank customers to fulfill their banking needs with ease and from any device.
 From opening an account in the bank to accessing online business, all your needs can be fulfilled here.
+
+# Prerequisites
+Before getting started with the project, ensure you have a basic web development environment set up. You'll need:
+
+* A web browser for testing and preview.
+* A text editor or integrated development environment (IDE) for code editing.
 
 # Project link(deployed using Azure)
 [online_Easy_cash](https://ambitious-hill-05e999f10.3.azurestaticapps.net)
